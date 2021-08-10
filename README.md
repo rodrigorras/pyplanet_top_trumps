@@ -3,7 +3,7 @@ Very extensible and can be used for many examples.
 
 
 - Possibilties increase number of cards
-- create a Class for managing the cards
+- Create Classes for managing the cards
 - Integrate it with Flask
 
 cheers
