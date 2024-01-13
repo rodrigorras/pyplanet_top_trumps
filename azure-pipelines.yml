@@ -1,0 +1,12 @@
+jobs:
+- job: Job1
+  steps:
+  - script: |
+      echo "##vso[task.setvariable variable=myVar]myValue"
+    name: SetVar
+- job: Job2
+  dependsOn: Job1
+  steps:
+  - script: |
+      echo $(Job1.SetVar.myVar)
+    name: UseVar
